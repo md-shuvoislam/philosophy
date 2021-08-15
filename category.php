@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-
 <!-- s-content
 ================================================== -->
 <section class="s-content">
