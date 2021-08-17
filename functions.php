@@ -2,6 +2,7 @@
 
 require_once( get_theme_file_path( "/inc/tgm.php" ) );
 require_once( get_theme_file_path( "/inc/attachments.php" ) );
+require_once( get_theme_file_path( "/widgets/social-media-widgets.php" ) );
 
 if ( site_url() == "http://localhost/theme-dev" ) {
     define( "VERSION", time() );
@@ -84,6 +85,15 @@ function philosophy_widgets(){
         'before_widget' => '<div id="%1$s" class="col-block %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h3 class="quarter-top-margin">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Before Footer Section', 'philosophy' ),
+        'id'            => 'before-footer-right',
+        'description'   => __( 'before footer section, right side', 'philosophy' ),
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
         'after_title'   => '</h3>',
     ) );
 }
