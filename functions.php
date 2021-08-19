@@ -147,7 +147,5 @@ function philosophy_search_form( $form ) {
 FORM;
 
     return $newform;
-
 }
-
 add_filter( "get_search_form", "philosophy_search_form" );
