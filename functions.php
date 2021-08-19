@@ -111,7 +111,7 @@ function philosophy_widgets(){
     ) );
     register_sidebar( array(
         'name'          => __( 'Footer Bottom Section', 'philosophy' ),
-        'id'           git  => 'footer-bottom',
+        'id'            => 'footer-bottom',
         'description'   => __( 'footer section, bottom side', 'philosophy' ),
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget'  => '</div>',
